@@ -54,7 +54,6 @@ $("#crystal4").on("click", function () {
     console.log(randomInt);
     userScore4 = userScore4 + randomInt;
 
-
     $("#setScore").text(userScore4);
     console.log(userScore4);
 
@@ -62,14 +61,15 @@ $("#crystal4").on("click", function () {
 
 // Let's write an if statement that compares the total score to the computers score so that the wins or losses can be determined
 
-if ($("#setScore") === "computerNumber"){
-    wins.text++ }
+if ($("#setScore").text ==  $("#computerNumber").text){
+   alert("you won!");
+   wins.text++ }
 if ($("#setScore") > "computerNumber"){
     losses.text++}
 
 if (wins.text++ || losses.text++) {
-    computerNumber.clear();
-    userScore.clear();
+    computerNumber = 0;
+    userScore = 0;
 }
 });
 
