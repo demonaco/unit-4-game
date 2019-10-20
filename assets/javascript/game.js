@@ -23,53 +23,65 @@ $(window).ready(function computerValue() {
     // The .on method for click actions below should start a function that similiarly assigns a random number associated with the button and displays it on the #setScore div. 
 // We do this for each button
 
-$("#crystal1").on("click", function() {
-    var userScore = "";
+$("#crystal1").on("click", function () {
+    var userScore1 = "";
     var randomInt = Math.floor(Math.random() * userOptions.length);
     console.log(randomInt);
-    userScore = userScore + randomInt;
+    userScore1 = userScore1 + randomInt;
+    
 
-
-    $("#setScore").html(userScore);
-    console.log(userScore);
+    $("#setScore").text(userScore1);
+    console.log(userScore1);
 
 });
 
 $("#crystal2").on("click", function() {
-    var userScore = "";
+    var userScore2 = "";
     var randomInt = Math.floor(Math.random() * userOptions.length);
     console.log(randomInt);
-    userScore = userScore + randomInt;
+    userScore2 = userScore2 + randomInt;
 
 
-    $("#setScore").text(userScore);
-    console.log(userScore);
+    $("#setScore").html(userScore2);
+    console.log(userScore2);
 
 });
 
 $("#crystal3").on("click", function () {
-    var userScore = "";
+    var userScore3 = "";
     var randomInt = Math.floor(Math.random() * userOptions.length);
     console.log(randomInt);
-    userScore = userScore + randomInt;
+    userScore3 = userScore3 + randomInt;
 
 
-    $("#setScore").text(userScore);
-    console.log(userScore);
+    $("#setScore").text(userScore3);
+    console.log(userScore3);
 
 });
 
 $("#crystal4").on("click", function () {
-    var userScore = "";
+    var userScore4 = "";
     var randomInt = Math.floor(Math.random() * userOptions.length);
     console.log(randomInt);
-    userScore = userScore + randomInt;
+    userScore4 = userScore4 + randomInt;
 
 
-    $("#setScore").text(userScore);
-    console.log(userScore);
+    $("#setScore").text(userScore4);
+    console.log(userScore4);
+
+    //  now that each button is clickable, we should have a way to have each button hold it's own, random value. When that button is pressed, only that value will output. The user should be able to press any combination of the four buttons to display text or html on the #setScore div.
+
+// Let's write an if statement that compares the total score to the computers score so that the wins or losses can be determined
+
+if ($("#setScore") === "computerNumber"){
+    wins++ }
+if ($("#setScore") > "computerNumber"){
+    losses++}
+
 
 });
+
+// 
 });
 
 // The .on method for click actions below should start a function that similiarly assigns a random number associated with the button and displays it on the #setScore div. 
@@ -142,3 +154,7 @@ var userScore1;
 var userScore2;
 var userScore3;
 var userScore4;
+var capturedCrystal1;
+var capturedCrystal2;
+var capturedCrystal3;
+var capturedCrystal4;
