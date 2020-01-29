@@ -76,29 +76,21 @@ var checkWin = function(){
 
 commenceGame();
 
-$("#green").on("click", function() {
-    alert("clicked Green");
-    addValues(crystal.one);
-    console.log(event)
+$(document).on("click", "#green", function(){
+    addValues(crystal.green);
 });
 
-$("#white").click(function() {
-    event.preventDefault()
-    addValues(crystal.two);
-})
+$(document).on("click", "#white", function(){
+    addValues(crystal.white);
+});
 
-$("#purple").click(function() {
-    event.preventDefault()
-    addValues(crystal.three);
-})
+$(document).on("click", "#purple", function(){
+    addValues(crystal.purple);
+});
 
-$("#pink").click(function() {
-    event.preventDefault()
-    addValues(crystal.four);
-
-})
-
-
+$(document).on("click", "#pink", function(){
+    addValues(crystal.pink);
+});
 
 $("#scoreBox").html(currentScore)
 $("#computerNumber").html(targetScore)
