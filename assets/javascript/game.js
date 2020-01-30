@@ -1,3 +1,4 @@
+$(window).ready(function() {
 //Variables
 var crystal = {
     green: {
@@ -92,10 +93,10 @@ $(document).on("click", "#pink", function(){
     addValues(crystal.pink);
 });
 
-$("#scoreBox").html(currentScore)
-$("#computerNumber").html(targetScore)
+$("#yourScore").innerhtml(currentScore)
+$("#targetScore").innerhtml(targetScore)
 
-
+})
 
 
 
