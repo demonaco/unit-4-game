@@ -76,7 +76,7 @@ var checkWin = function() {
         winCount++;
         $("#winCount").html(winCount)
        
-        commenceGame(); 
+        
     } 
 }; 
 
@@ -101,10 +101,12 @@ $(document).on("click", "#pink", function(){
     addValues(crystal.pink);
 });
 
-$("#yourScore").html(currentScore)
-$("#targetScore").innerhtml(targetScore)
+commenceGame()
 })
 
+//variables top 
+//define functions
+//call functions
 
 
 
