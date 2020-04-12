@@ -8,9 +8,9 @@ body {
     background-image: url("../images/memphis-mini-dark.png");
 } 
 
-.crystalset {
+/* .crystalset {
     border: 2px white solid;
-}
+} */
 
 img {
     flex-wrap: wrap;
@@ -22,7 +22,9 @@ color: whitesmoke;
 margin: center;
 }
 
-
+.yourScore {
+    margin: 0;
+}
 
 
 /* #crystalsCollector{
